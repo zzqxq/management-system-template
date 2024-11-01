@@ -1,20 +1,20 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from 'vue-router';
 
-import Layout from "@/layout/index.vue";
+import Layout from '@/layout/index.vue';
 // 静态路由
 export const constantRoutes = [
   {
-    path: "/",
-    name: "/",
+    path: '/',
+    name: '/',
     component: Layout,
-    redirect: "/home",
+    redirect: '/home',
 
     children: [
       {
-        path: "home",
-        name: "home",
-        component: () => import("@/views/home.vue"),
-      }
+        path: 'home',
+        name: 'home',
+        component: () => import('@/views/home.vue'),
+      },
     ],
   },
 ];
@@ -30,4 +30,3 @@ const router = createRouter({
 });
 
 export default router;
-

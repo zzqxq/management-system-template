@@ -1,18 +1,9 @@
 <template>
-  <div>
-    666
-
-    <br>
-    {{ userStore.user }}
-  </div>
+  <div></div>
 </template>
 
 <script setup>
-import { useUserStore } from "@/stores";
-
-const userStore = useUserStore();
+import { ref } from 'vue';
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
